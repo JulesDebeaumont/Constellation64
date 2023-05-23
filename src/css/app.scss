@@ -1,0 +1,57 @@
+// app global css in SCSS form
+* {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--layout-color);
+}
+
+body {
+    color: #DDD;
+    background-color: rgb(18, 18, 18);
+    font-variant: small-caps;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    /* no underline */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE 11 */
+    scrollbar-width: none;
+    /* Firefox 64 */
+}
+
+:root {
+    --important: #e2ceae;
+    --fontBlank: #ddd;
+    --linkHover: rgb(252, 227, 182);
+    --bgDownload: rgb(133, 79, 18);
+    --bgCase: rgba(46, 43, 39, 0.6);
+    --caseBorder: rgba(100, 100, 100, 0.6);
+    --bgCaseHover: rgba(59, 53, 46, 0.6);
+    --linkHover2: rgb(180, 240, 225);
+    --bgRealItem: rgb(133, 79, 18);
+    --fontArticle: rgb(231, 219, 197);
+    --layout-color: rgb(231, 219, 197);
+}
+
+.constellation-card-page-image-hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+.constellation-card-page-image {
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+li {
+    list-style: none;
+}
