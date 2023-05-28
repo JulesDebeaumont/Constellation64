@@ -17,7 +17,7 @@
 #contact {
     width: 100%;
     min-height: calc(100vh - 64px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./img/Sunset.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/img/Sunset.png');
     background-size: cover;
     background-position-y: 35%;
 }

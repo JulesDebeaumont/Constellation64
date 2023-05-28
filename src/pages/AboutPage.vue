@@ -52,7 +52,7 @@
 #about {
     width: 100%;
     min-height: calc(100vh - 64px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/Nimpize.PNG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/Nimpize.PNG');
     background-size: cover;
     background-position-x: 40%;
     background-position-y: -60%;

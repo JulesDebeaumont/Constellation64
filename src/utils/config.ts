@@ -1075,14 +1075,6 @@ export const configPages: IConfigPage[] = [
             },
             {
                 type: 'picture',
-                filenamePicture: '8.png',
-            },
-            {
-                type: 'picture',
-                filenamePicture: '9.png',
-            },
-            {
-                type: 'picture',
                 filenamePicture: '10.png',
             },
             {

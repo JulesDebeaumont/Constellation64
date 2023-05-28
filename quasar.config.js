@@ -11,6 +11,8 @@
 
 const { configure } = require('quasar/wrappers');
 
+const cheminPublique = process.env.CIBLE ? '/Constellation64/' : ''
+console.log('Chemin publique : ' + cheminPublique)
 
 module.exports = configure(function (/* ctx */) {
   return {
@@ -67,9 +69,9 @@ module.exports = configure(function (/* ctx */) {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/Constellation64/',
+      publicPath: cheminPublique,
       // analyze: true,
-      // env: {},
+      env: { cheminPublique },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
