@@ -774,6 +774,10 @@ export const configPages: IConfigPage[] = [
                 type: 'picture',
                 filenamePicture: '1.png',
             },
+            {
+                type: 'comment',
+                comment: 'Shoutout to Ultra553 for the base map.'
+            },
         ]
     },
     {
@@ -1108,6 +1112,187 @@ export const configPages: IConfigPage[] = [
             {
                 type: 'picture',
                 filenamePicture: '18.png',
+            },
+        ]
+    },
+    {
+        titre: "Marty's Shop",
+        couleur: '#e0c0a5ff',
+        couleurTexte: '#dec1b4ff',
+        folderPicture: 'martysShop',
+        description: {
+            region: "???",
+            engine: 'F3DZEX',
+            polyCount: 2172,
+            roomCount: 1
+        },
+        displayPages: [
+            {
+                type: 'picture',
+                filenamePicture: '1.png',
+            },
+            {
+                type: 'description',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '2.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '3.png',
+            },
+        ]
+    },
+    {
+        titre: "Hawthorn Shop",
+        couleur: '#e0d5a5ff',
+        couleurTexte: '#ded4b4ff',
+        folderPicture: 'hawthornShop',
+        description: {
+            region: "???",
+            engine: 'F3DZEX',
+            polyCount: 1884,
+            roomCount: 1
+        },
+        displayPages: [
+            {
+                type: 'picture',
+                filenamePicture: '1.png',
+            },
+            {
+                type: 'description',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '2.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '3.png',
+            },
+        ]
+    },
+    {
+        titre: "Rainy shore",
+        couleur: '#a5dee0ff',
+        couleurTexte: '#b4d6deff',
+        folderPicture: 'rainyShore',
+        description: {
+            region: "???",
+            engine: 'F3DZEX',
+            polyCount: 1462,
+            roomCount: 1
+        },
+        displayPages: [
+            {
+                type: 'picture',
+                filenamePicture: '1.png',
+            },
+            {
+                type: 'description',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '2.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '3.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '4.png',
+            },
+        ]
+    },
+    {
+        titre: "Dark Ice Cathedrale 2",
+        couleur: '#19a4d1',
+        couleurTexte: '#aedceb',
+        folderPicture: 'darkIceCathedrale2',
+        description: {
+            region: "???",
+            engine: 'F3DZEX',
+            polyCount: 13453,
+            roomCount: 23
+        },
+        displayPages: [
+            {
+                type: 'picture',
+                filenamePicture: '1.png',
+            },
+            {
+                type: 'description',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '2.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '3.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '4.png',
+            },
+        ]
+    },
+    {
+        titre: "Death Mountain Trail",
+        couleur: '#075235ff',
+        couleurTexte: '#82ad8fff',
+        folderPicture: 'deathMountainTrail',
+        description: {
+            region: "???",
+            engine: 'F3DZEX',
+            polyCount: 4204,
+            roomCount: 4
+        },
+        displayPages: [
+            {
+                type: 'picture',
+                filenamePicture: '1.png',
+            },
+            {
+                type: 'description',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '2.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '3.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '4.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '5.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '6.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '7.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '8.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '9.png',
+            },
+            {
+                type: 'picture',
+                filenamePicture: '10.png',
             },
         ]
     },
