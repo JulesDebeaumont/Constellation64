@@ -10,6 +10,8 @@
 
 const { configure } = require('quasar/wrappers');
 
+const cheminPublique = '/Constellation64/';
+
 module.exports = configure(function (/* ctx */) {
   return {
     eslint: {
@@ -60,8 +62,9 @@ module.exports = configure(function (/* ctx */) {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/Constellation64/',
+      publicPath: cheminPublique,
       // analyze: true,
+      env: { cheminPublique },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,

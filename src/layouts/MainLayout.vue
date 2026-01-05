@@ -4,6 +4,7 @@ import { useQuasar } from 'quasar';
 // consts
 const $q = useQuasar()
 const menuBurger = $q.screen.width < 600
+const prefixImage = process.env.cheminPublique
 </script>
 
 <template>
@@ -27,7 +28,7 @@ const menuBurger = $q.screen.width < 600
           </router-link>
         </div>
 
-        <q-img v-else :src="`/img/menuColored.png`" width="30px">
+        <q-img v-else :src="`${prefixImage}/img/menuColored.png`" width="30px">
           <q-popup-proxy>
             <q-list class="bg-black text-body1">
               <q-item v-close-popup :to="{ name: 'about' }">

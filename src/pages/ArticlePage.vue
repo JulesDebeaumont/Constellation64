@@ -5,6 +5,7 @@ import { useRoute } from 'vue-router';
 // consts
 const route = useRoute()
 const nomArticle = route.params.nomArticle
+const prefixImage = process.env.cheminPublique
 const configArticle = configPages.find((config) => {
     return config.folderPicture === nomArticle
 })
@@ -20,7 +21,7 @@ const configArticle = configPages.find((config) => {
             <div class="q-pb-xl q-mb-xl full-width">
                 <template v-for="(item, index) in configArticle.displayPages" :key="index">
                     <q-img v-if="item.type === 'picture'" class="q-my-md"
-                        :src="`/imgFolio/${configArticle.folderPicture}/${item.filenamePicture}`">
+                        :src="`${prefixImage}/imgFolio/${configArticle.folderPicture}/${item.filenamePicture}`">
                         <template v-slot:loading>
                             <q-spinner :style="`color: ${configArticle.couleurTexte} !important;`" />
                         </template>
