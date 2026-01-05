@@ -2,8 +2,6 @@
 import { ref } from 'vue'
 import { configPages } from 'src/utils/config'
 
-// consts
-const prefixPath = process.env.cheminPublique
 // refs
 const hoverItems = ref<{ [titrePage: string]: boolean }>({})
 </script>
@@ -14,7 +12,7 @@ const hoverItems = ref<{ [titrePage: string]: boolean }>({})
       <q-card v-for="page in configPages" :key="page.titre" class="constellation-card-page"
         @mouseover="hoverItems[page.folderPicture] = true" @mouseleave="hoverItems[page.folderPicture] = false">
         <router-link :to="{ name: 'article', params: { nomArticle: page.folderPicture } }">
-          <q-img :src="`${prefixPath}/imgFolio/${page.folderPicture}/preview.png`"
+          <q-img :src="`/imgFolio/${page.folderPicture}/preview.png`"
             :img-class="hoverItems[page.folderPicture] === true ? 'constellation-card-page-image-hover' : hoverItems[page.folderPicture] === false ? 'constellation-card-page-image' : ''"
             spinner-color="primary">
             <div v-show="hoverItems[page.folderPicture] === true"

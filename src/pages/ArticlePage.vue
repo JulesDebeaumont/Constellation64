@@ -5,7 +5,6 @@ import { useRoute } from 'vue-router';
 // consts
 const route = useRoute()
 const nomArticle = route.params.nomArticle
-const prefixImage = process.env.cheminPublique
 const configArticle = configPages.find((config) => {
     return config.folderPicture === nomArticle
 })
@@ -21,7 +20,7 @@ const configArticle = configPages.find((config) => {
             <div class="q-pb-xl q-mb-xl full-width">
                 <template v-for="(item, index) in configArticle.displayPages" :key="index">
                     <q-img v-if="item.type === 'picture'" class="q-my-md"
-                        :src="`${prefixImage}/imgFolio/${configArticle.folderPicture}/${item.filenamePicture}`">
+                        :src="`/imgFolio/${configArticle.folderPicture}/${item.filenamePicture}`">
                         <template v-slot:loading>
                             <q-spinner :style="`color: ${configArticle.couleurTexte} !important;`" />
                         </template>
@@ -31,10 +30,10 @@ const configArticle = configPages.find((config) => {
                         class="constellation-page-article-description flex column flex-center q-py-lg">
                         <span :style="`color: ${configArticle.couleurTexte};`">Region : {{
                             configArticle.description.region
-                            }}</span>
+                        }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Engine : {{
                             configArticle.description.engine
-                            }}</span>
+                        }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Poly count : {{
                             configArticle.description.polyCount }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Room count : {{
