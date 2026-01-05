@@ -31,10 +31,10 @@ const configArticle = configPages.find((config) => {
                         class="constellation-page-article-description flex column flex-center q-py-lg">
                         <span :style="`color: ${configArticle.couleurTexte};`">Region : {{
                             configArticle.description.region
-                        }}</span>
+                            }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Engine : {{
                             configArticle.description.engine
-                        }}</span>
+                            }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Poly count : {{
                             configArticle.description.polyCount }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Room count : {{
