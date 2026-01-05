@@ -8,7 +8,7 @@
                     Hi, I'm Ostrealava02, I do 3D modeling for fun.<br />
                     I made an <i>Ocarina of Time</i> romhack called <i>Nimpize Adventure</i> in 2018 and since then,
                     I've discovered a craze for drawing old-school style scenes.<br />
-                    I use <i>Blender 2.8</i> mixed with <i>Fast64</i>, a community-made pluggin that allows easy injections
+                    I use <i>Blender</i> mixed with <i>Fast64</i>, a community-made pluggin that allows easy injections
                     for <i>Nintendo64</i> games.<br />
                     Sometimes I like to use the <i>Eevee Engin</i> to make scenes.
                 </div>

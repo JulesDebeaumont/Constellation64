@@ -21,17 +21,20 @@ const configArticle = configPages.find((config) => {
             <div class="q-pb-xl q-mb-xl full-width">
                 <template v-for="(item, index) in configArticle.displayPages" :key="index">
                     <q-img v-if="item.type === 'picture'" class="q-my-md"
-                        :src="`${prefixImage}/imgFolio/${configArticle.folderPicture}/${item.filenamePicture}`"
-                        :spinner-color="configArticle.couleurTexte" />
+                        :src="`${prefixImage}/imgFolio/${configArticle.folderPicture}/${item.filenamePicture}`">
+                        <template v-slot:loading>
+                            <q-spinner :style="`color: ${configArticle.couleurTexte} !important;`" />
+                        </template>
+                    </q-img>
 
                     <div v-if="item.type === 'description'"
                         class="constellation-page-article-description flex column flex-center q-py-lg">
                         <span :style="`color: ${configArticle.couleurTexte};`">Region : {{
                             configArticle.description.region
-                            }}</span>
+                        }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Engine : {{
                             configArticle.description.engine
-                            }}</span>
+                        }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Poly count : {{
                             configArticle.description.polyCount }}</span>
                         <span :style="`color: ${configArticle.couleurTexte};`">Room count : {{
